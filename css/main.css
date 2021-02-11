@@ -1,0 +1,367 @@
+.main__container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.main__content {
+  padding: 0 100px;   
+  display: grid;
+  height: 40vw;
+  grid-template-columns: repeat(auto-fill, 6.25%);
+  grid-template-rows: repeat(auto-fill, 12.5%);
+  position: relative;
+  top: 65px;
+}
+
+.bsa {
+  grid-area: 1/1/5/5;
+}
+
+.qa {
+  grid-area: 5/1/9/5;
+} 
+
+.js {
+  grid-area: 1/5/7/9;
+} 
+
+.java {
+  grid-area: 7/5/9/9;
+}
+
+.php {
+  grid-area: 1/9/4/17;
+} 
+
+.dotnet {
+  grid-area: 4/9/9/14;
+} 
+
+.events {
+  grid-area: 4/14/6/17;
+} 
+
+.blog {
+  grid-area: 6/14/8/17;
+} 
+
+.contacts {
+  grid-area: 8/14/9/17;
+} 
+
+.flip__card {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip__card img {
+  width: 50%;
+}
+
+.flip__card-inner {  
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip__card:hover .flip__card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip__card-front, .flip__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip__card-front {
+  z-index: 50;  
+}
+
+.bsa__flip__card-front {  
+  background-color: white;
+  font-size: 40px;  
+}
+
+.flip__card-back {  
+  transform: rotateY(180deg);
+}
+
+.bsa__flip__card-back {  
+  background-color: white;
+}
+
+.bsa__join-button {
+  background-color: #409df5;
+  border: none;
+  color: white;  
+  padding: 3% 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  cursor: pointer;
+  border-radius: 0.2vw;
+  border: none;
+  outline: none;
+}
+
+.bsa__join-button:hover {
+  background-color: #090796;
+}
+
+.qa__flip__card-front {
+  font-size: 8vw;
+  background-color: #49ce75;
+  font-family: Arial;
+  color: white;  
+}
+
+.prog__card-back {
+  background-color: white;
+  font-size: 1.75vw;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.js__flip__card-front {
+  font-size: 6vw;  
+  font-family: Arial;   
+  background-color: #F5C968;
+  font-weight: bold;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: black;
+}
+
+.fly__card {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.fly__card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.fly__card-front {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fly__card:hover .java__fly__card {
+  height: 0;
+  font-size: 0;  
+}
+
+.java__fly__card {
+  background-color: #c41731;
+  color: white;
+  font-size: 4vw;  
+  font-family: Arial;
+  transition: all 0.5s ease;
+  z-index: 2;
+  bottom: 0;
+}
+
+.fly__card:hover .php__fly__card {
+  height: 0;
+  width: 0;
+  font-size: 0;
+  right: 0;
+  top: 0;
+}
+
+.php__fly__card {
+  background-color: #848db3;
+  font-style: italic;
+  font-size: 6vw; 
+  color: black;
+  transition: all 0.5s ease;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+
+.fly__card:hover .dotnet__fly__card {
+  height: 0;
+  width: 0;
+  font-size: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.dotnet__fly__card {
+  background-color: #410d50;
+  color: white;
+  font-size: 6vw;  
+  font-family: Arial;
+  transition: all 0.5s ease;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+}
+
+.fly__card:hover .events__fly__card {
+  width: 0;
+  font-size: 0;
+  right: 0;
+}
+
+.events__fly__card {
+  background-color: #2c8aee;
+  color: white;
+  font-size: 1.25vw;  
+  font-family: Arial;
+  transition: all 0.5s ease;
+  z-index: 2;
+  right: 0;
+}
+
+.info__card-back {
+  background-color: white;
+  font-size: 16px;  
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.info__card-back::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.info__card-back::-webkit-scrollbar-track {
+  background: white;
+}
+
+.info__card-back::-webkit-scrollbar-thumb {
+  background: rgb(145, 142, 142);
+  border-radius: 0.5rem;
+}
+
+.info__card-back::-webkit-scrollbar-thumb:hover {
+  background: rgb(59, 59, 59);
+}
+
+.fly__card:hover .blog__fly__card {
+  width: 0;
+  font-size: 0;
+  right: 0;
+}
+
+.blog__fly__card {
+  background-color: #0e3677;
+  color: white;
+  font-size: 1.25vw;  
+  font-family: Arial;
+  transition: all 0.5s ease;
+  z-index: 5;
+  right: 0;
+}
+
+.fly__card:hover .contacts__fly__card {
+  width: 0;
+  font-size: 0;
+  right: 0;
+}
+
+.contacts__fly__card {
+  background-color: #051d47;
+  color: white;
+  font-size: 1.25vw;  
+  font-family: Arial;
+  transition: all 0.5s ease;
+  z-index: 5;
+  right: 0;
+}
+
+.icons__card-back {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15%;
+  font-size: 2vw;
+}
+
+.fly__card-front, .fly__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+}
+
+.icons__card-back i:hover {
+  color: rgb(61, 61, 241);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {  
+  .main__content {
+    height: 80vw;
+    grid-template-columns: 45% 5% 30% 20%;
+    grid-template-rows: repeat(20, 5%);
+  }
+ 
+  .bsa {
+    grid-area: 1/1/10/2;
+  }
+
+  .qa {
+    grid-area: 16/1/21/3;    
+  }
+  
+  .js {
+    grid-area: 1/2/11/4;       
+  }
+
+  .java {
+    grid-area: 11/1/16/3;    
+  }
+
+  .php {
+    grid-area: 11/3/16/5;    
+  }
+
+  .dotnet {
+    grid-area: 16/3/21/5;    
+  }
+
+  .events {
+    grid-area: 1/4/5/5;
+  }
+
+  .blog {
+    grid-area: 5/4/9/5;
+  }
+
+  .contacts {
+    grid-area: 9/4/11/5;
+  }  
+}
