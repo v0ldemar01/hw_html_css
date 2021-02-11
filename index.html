@@ -5,8 +5,195 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/notification.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
-<body>
-  
+<body class="container">
+  <header class="page-header">
+    <div class="header__container">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="/">        
+            <img src="img/binary_studio.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="header__menu">
+          <div class="notify__icon">
+            <i class="fa fa-bell"></i>
+          </div>                
+          <label class="avatar" for="toggle-menu">V</label>  
+          <input type="checkbox" id="toggle-menu"> 
+          <div class="drop__menu">
+            <p class="name">Volodymyr Minchenko</p>
+            <hr>
+            <div class="drop__menu__links">
+              <a href="#"><i class="fas fa-user"></i>&nbspProfile</a>
+              <a href="#"><i class="fas fa-sign-out-alt"></i>&nbspLog Out</a>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>    
+  </header>
+  <main class="page-main">
+    <div class="main__container">      
+      <section class="main__content">
+        <article class="bsa flip__card">
+          <div class="flip__card-inner">
+            <div class="flip__card-front bsa__flip__card-front">
+              <img src="img/bsa_logo.png" alt="BSA">
+            </div>
+            <div class="flip__card-back bsa__flip__card-back">
+              <button class="bsa__join-button">
+                Join
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="qa flip__card">
+          <div class="flip__card-inner">
+            <div class="flip__card-front qa__flip__card-front">
+              <span>QA</span>
+            </div>
+            <div class="flip__card-back prog__card-back">
+              <p>Advanced online course focusing on the finer points of QA</p>
+            </div>
+          </div>
+        </article>
+        <article class="js flip__card">
+          <div class="flip__card-inner">
+            <div class="flip__card-front js__flip__card-front">
+              <strong>JS</strong>
+            </div>
+            <div class="flip__card-back prog__card-back">
+              <p>An online intensive course on building web applications with JavaScript</p>
+            </div>
+          </div>
+        </article>
+        <article class="java fly__card">
+          <div class="fly__card-inner">
+            <div class="fly__card-front java__fly__card">
+              <span>Java</span>
+            </div>
+            <div class="fly__card-back prog__card-back">
+              <p class="text">Advanced online course on building web aplications with Java</p>
+            </div>
+          </div>
+        </article>
+        <article class="php fly__card">
+          <div class="fly__card-inner">
+            <div class="fly__card-front php__fly__card">
+              <span>php</span>
+            </div>
+            <div class="fly__card-back prog__card-back">
+              <p class="text">An online intensive course on building web applications with PHP</p>
+            </div>
+          </div>          
+        </article>
+        <article class="dotnet fly__card">
+          <div class="fly__card-inner">
+            <div class="fly__card-front dotnet__fly__card">
+              <span>.NET</span>
+            </div>
+            <div class="fly__card-back prog__card-back">
+              <p class="text">An online intensive course on building web applications with .NET</p>
+            </div>
+          </div>
+        </article>
+        <article class="events fly__card">
+          <div class="fly__card-inner">
+            <div class="fly__card-front events__fly__card">
+              <span>Events</span>
+            </div>
+            <div class="fly__card-back info__card-back">
+              <p class="text">У березні-квітні відбулася серія наших онлайн трансляцій по веб-розробці під кодовою
+                назвою Homeference. Ми на деякий час залишимо посилання на запис трансляції нижче.
+                Дивись, шарь з друзями, а щоб не пропустити майбутні події підписуйся на <a href="">телеграм
+                Binary Studio Academy.</a></p>
+            </div>
+          </div>
+        </article>
+        <article class="blog fly__card">
+          <div class="fly__card-inner">
+            <div class="fly__card-front blog__fly__card">
+              <span>Blog</span>
+            </div>
+            <div class="fly__card-back info__card-back">
+              <p class="text">Ділимося інсайтами Академії, досвідом створення world-class проектів та роздумами про
+                життя, код, роботу.</p>
+            </div>
+          </div>
+        </article>
+        <article class="contacts fly__card">
+          <div class="fly__card-inner">
+            <div class="fly__card-front contacts__fly__card">
+              <span>Contacts</span>
+            </div>
+            <div class="fly__card-back icons__card-back">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-telegram"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </article>
+      </section>      
+    </div>    
+  </main>
+  <footer class="page-footer">
+    <p style="font-size: 17px; text-align: center; padding: 20px 0;">© Powered by Binary Studio Team</p>
+  </footer>
+  <div class="notification-message">
+    <label class="notification__show" for="toggle-notification">
+      <i class="fas fa-envelope"></i>
+    </label>
+    <input type="checkbox" id="toggle-notification">
+    <div class="notification__container">
+      <div class="notification__item notification__item-error">
+        <div class="notification__item-icon">
+          <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <div>
+          <div class="notification__item-header">
+            Error
+          </div>
+          <div class="notification__item-text">
+            Something went wrong. Please try again later.
+          </div>
+        </div>
+      </div>
+      <div class="notification__item notification__item-success">
+        <div class="notification__item-icon">
+          <i class="fa fa-check-circle"></i>
+        </div>
+        <div>
+          <div class="notification__item-header">
+            Success
+          </div>
+          <div class="notification__item-text">
+            Profile was updated.
+          </div>
+        </div>
+      </div>
+      <div class="notification__item notification__item-warning">
+        <div class="notification__item-icon">
+          <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div>
+          <div class="notification__item-header">
+            Warning
+          </div>
+          <div class="notification__item-text">               
+            Block elements should not be nested into inline ones.
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div> 
 </body>
 </html>
+
+
+
