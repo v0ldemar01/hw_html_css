@@ -15,8 +15,9 @@ body {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 6.5vh 90vh 3.5vh;
+  grid-template-rows: 6.5vh 86.25vh 3.5vh;
   background-color: #f9f9f9;
+  overflow: hidden;
 }
 
 .page-header {
